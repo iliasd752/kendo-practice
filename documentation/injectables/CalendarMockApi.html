@@ -1,0 +1,1182 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@fuse/demo documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">@fuse/demo documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >CalendarMockApi</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/mock-api/apps/calendar/api.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_calendars" >_calendars</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_events" >_events</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_exceptions" >_exceptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_settings" >_settings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_weekdays" >_weekdays</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_generateRuleset" >_generateRuleset</a>
+                            </li>
+                            <li>
+                                <a href="#registerHandlers" >registerHandlers</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_fuseMockApiService: <a href="../injectables/FuseMockApiService.html" target="_self">FuseMockApiService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/mock-api/apps/calendar/api.ts:17</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_fuseMockApiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FuseMockApiService.html" target="_self" >FuseMockApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_generateRuleset"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>_generateRuleset</b></span>
+                        <a href="#_generateRuleset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_generateRuleset(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, dtStart: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, until: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="574"
+                            class="link-to-prism">src/app/mock-api/apps/calendar/api.ts:574</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Generates an RRuleSet from given event</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>dtStart</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>until</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>RRuleSet | RRule</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registerHandlers"></a>
+                    <span class="name">
+                        <span ><b>registerHandlers</b></span>
+                        <a href="#registerHandlers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>registerHandlers()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/mock-api/apps/calendar/api.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Register Mock API handlers</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_calendars"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_calendars</b></span>
+                        <a href="#_calendars"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>calendarsData</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/mock-api/apps/calendar/api.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_events"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_events</b></span>
+                        <a href="#_events"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>eventsData</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/mock-api/apps/calendar/api.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_exceptions"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_exceptions</b></span>
+                        <a href="#_exceptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>exceptionsData</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/mock-api/apps/calendar/api.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_settings"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_settings</b></span>
+                        <a href="#_settings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>settingsData</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/mock-api/apps/calendar/api.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_weekdays"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_weekdays</b></span>
+                        <a href="#_weekdays"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>weekdaysData</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/mock-api/apps/calendar/api.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { assign, cloneDeep, omit } from &#x27;lodash-es&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import RRule, { RRuleSet, rrulestr } from &#x27;rrule&#x27;;
+import { FuseMockApiService, FuseMockApiUtils } from &#x27;@fuse/lib/mock-api&#x27;;
+import { calendars as calendarsData, events as eventsData, exceptions as exceptionsData, settings as settingsData, weekdays as weekdaysData } from &#x27;app/mock-api/apps/calendar/data&#x27;;
+
+@Injectable({
+    providedIn: &#x27;root&#x27;
+})
+export class CalendarMockApi
+{
+    private _calendars: any[] &#x3D; calendarsData;
+    private _events: any[] &#x3D; eventsData;
+    private _exceptions: any[] &#x3D; exceptionsData;
+    private _settings: any &#x3D; settingsData;
+    private _weekdays: any &#x3D; weekdaysData;
+
+    /**
+     * Constructor
+     */
+    constructor(private _fuseMockApiService: FuseMockApiService)
+    {
+        // Register Mock API handlers
+        this.registerHandlers();
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Public methods
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Register Mock API handlers
+     */
+    registerHandlers(): void
+    {
+        // -----------------------------------------------------------------------------------------------------
+        // @ Calendars - GET
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onGet(&#x27;api/apps/calendar/calendars&#x27;)
+            .reply(() &#x3D;&gt; {
+
+                // Clone the calendars
+                const calendars &#x3D; cloneDeep(this._calendars);
+
+                // Return the response
+                return [200, calendars];
+            });
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Calendars - POST
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onPost(&#x27;api/apps/calendar/calendars&#x27;)
+            .reply(({request}) &#x3D;&gt; {
+
+                // Get the calendar as the new calendar
+                const newCalendar &#x3D; cloneDeep(request.body.calendar);
+
+                // Add an id to the new calendar
+                newCalendar.id &#x3D; FuseMockApiUtils.guid();
+
+                // Push the new calendar
+                this._calendars.push(newCalendar);
+
+                // Return the response
+                return [200, newCalendar];
+            });
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Calendars - PATCH
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onPatch(&#x27;api/apps/calendar/calendars&#x27;)
+            .reply(({request}) &#x3D;&gt; {
+
+                // Get the id and calendar
+                const id &#x3D; request.body.id;
+                const calendar &#x3D; cloneDeep(request.body.calendar);
+
+                // Prepare the updated calendar
+                let updatedCalendar &#x3D; null;
+
+                // Find the calendar and update it
+                this._calendars.forEach((item, index, calendars) &#x3D;&gt; {
+
+                    if ( item.id &#x3D;&#x3D;&#x3D; id )
+                    {
+                        // Update the calendar
+                        calendars[index] &#x3D; assign({}, calendars[index], calendar);
+
+                        // Store the updated calendar
+                        updatedCalendar &#x3D; calendars[index];
+                    }
+                });
+
+                // Return the response
+                return [200, updatedCalendar];
+            });
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Calendars - DELETE
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onDelete(&#x27;api/apps/calendar/calendars&#x27;)
+            .reply(({request}) &#x3D;&gt; {
+
+                // Get the id
+                const id &#x3D; request.params.get(&#x27;id&#x27;);
+
+                // Find the calendar and delete it
+                const index &#x3D; this._calendars.findIndex(calendar &#x3D;&gt; calendar.id &#x3D;&#x3D;&#x3D; id);
+                this._calendars.splice(index, 1);
+
+                // Find the events that belong to the calendar and remove them as well
+                this._events &#x3D; this._events.filter(event &#x3D;&gt; event.calendarId !&#x3D;&#x3D; id);
+
+                // Return the response
+                return [200, true];
+            });
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Events - GET
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onGet(&#x27;api/apps/calendar/events&#x27;)
+            .reply(({request}) &#x3D;&gt; {
+
+                // Get the start and end dates as moment
+                const viewStart &#x3D; moment(request.params.get(&#x27;start&#x27;)).startOf(&#x27;day&#x27;);
+                const viewEnd &#x3D; moment(request.params.get(&#x27;end&#x27;)).endOf(&#x27;day&#x27;);
+
+                // Clone the events
+                const events &#x3D; cloneDeep(this._events);
+
+                // Prepare the results
+                const results: any[] &#x3D; [];
+
+                // Go through the events...
+                events.forEach((event) &#x3D;&gt; {
+
+                    // Get the event&#x27;s start and end dates as moment
+                    const eventStart &#x3D; moment(event.start);
+                    const eventEnd &#x3D; moment(event.end);
+
+                    // If it&#x27;s a normal event...
+                    if ( !event.recurrence )
+                    {
+                        // Only grab the event if it&#x27;s within the range
+                        if ( eventStart.isSameOrAfter(viewStart, &#x27;day&#x27;) &amp;&amp; eventEnd.isSameOrBefore(viewEnd, &#x27;day&#x27;) )
+                        {
+                            // Push the event into the results array
+                            results.push(event);
+                        }
+                    }
+                    // If it&#x27;s a recurring event...
+                    else
+                    {
+                        // Skip if the event does not recur within the view range
+                        if ( eventStart.isAfter(viewEnd, &#x27;day&#x27;) || eventEnd.isBefore(viewStart, &#x27;day&#x27;) )
+                        {
+                            return;
+                        }
+
+                        // Set the DTSTART and UNTIL for RRule
+                        const dtStart &#x3D; eventStart.clone();
+                        const until &#x3D; viewEnd.isBefore(eventEnd) ? viewEnd.clone().utc() : eventEnd.clone().utc();
+
+                        // Create an RRuleSet
+                        const rruleset &#x3D; this._generateRuleset(event, dtStart, until);
+
+                        // Generate the recurring dates and loop through them
+                        rruleset.all().forEach((date) &#x3D;&gt; {
+
+                            // Get the rule date as a moment
+                            const ruleDate &#x3D; moment(date);
+
+                            // Subtract the UTC Offset from the rule date as we use local time for DTSTART.
+                            // The reason for this is simple; if we use UTC dates for DTSTART, RRule generated
+                            // dates can shift. Since we have to store the dates as UTC, we can figure out the
+                            // UTC value by simply subtracting the UTC Offset (minutes) from the rule date rather
+                            // than using UTC dates in the first place. This will ensure there will be no time/day
+                            // shift on generated rules since they will be generated based on the local time.
+                            ruleDate.subtract(ruleDate.utcOffset(), &#x27;minutes&#x27;);
+
+                            // Skip the date if it&#x27;s not in between the view start and view end
+                            // to prevent generating unnecessary amount of instances and to
+                            // prevent instance duplication
+                            if ( !ruleDate.isBetween(viewStart, viewEnd, &#x27;day&#x27;, &#x27;[]&#x27;) )
+                            {
+                                return;
+                            }
+
+                            // Prepare the event instance
+                            const eventInstance &#x3D; {
+
+                                // Generate an instance id using the event id and rule date
+                                id: event.id + &#x27;_&#x27; + ruleDate.clone().utc().format(&#x27;YYYYMMDD[T]HHmmss[Z]&#x27;),
+
+                                // Set the recurringEventId on the event so we don&#x27;t lose the event&#x27;s origin
+                                recurringEventId: event.id,
+
+                                // Whether this is the first instance of the recurring event or not
+                                isFirstInstance: event.start &#x3D;&#x3D;&#x3D; ruleDate.clone().toISOString(),
+
+                                // Get the rest of the mock-api
+                                calendarId : event.calendarId,
+                                title      : event.title,
+                                description: event.description,
+                                start      : ruleDate.toISOString(),
+                                end        : ruleDate.add(event.duration, &#x27;minutes&#x27;).toISOString(),
+                                duration   : event.duration,
+                                allDay     : event.allDay,
+                                recurrence : event.recurrence
+                            };
+
+                            // Push the event instance to the results array
+                            results.push(eventInstance);
+                        });
+                    }
+                });
+
+                // Return the response
+                return [200, results];
+            });
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Event - POST
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onPost(&#x27;api/apps/calendar/event&#x27;)
+            .reply(({request}) &#x3D;&gt; {
+
+                // Get the event as the new event
+                const newEvent &#x3D; cloneDeep(request.body.event);
+
+                // Add an id to the new event
+                newEvent.id &#x3D; FuseMockApiUtils.guid();
+
+                // Unshift the new event
+                this._events.unshift(newEvent);
+
+                // Return the response
+                return [200, newEvent];
+            });
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Event - PATCH
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onPatch(&#x27;api/apps/calendar/event&#x27;)
+            .reply(({request}) &#x3D;&gt; {
+
+                // Get the id and event
+                const id &#x3D; request.body.id;
+                const event &#x3D; cloneDeep(request.body.event);
+
+                // Prepare the updated event
+                let updatedEvent &#x3D; null;
+
+                // Find the event and update it
+                this._events.forEach((item, index, events) &#x3D;&gt; {
+
+                    if ( item.id &#x3D;&#x3D;&#x3D; id )
+                    {
+                        // Update the event
+                        events[index] &#x3D; assign({}, events[index], event);
+
+                        // Store the updated event
+                        updatedEvent &#x3D; events[index];
+                    }
+                });
+
+                // Return the response
+                return [200, updatedEvent];
+            });
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Event - DELETE
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onDelete(&#x27;api/apps/calendar/event&#x27;)
+            .reply(({request}) &#x3D;&gt; {
+
+                // Get the id and event
+                const id &#x3D; request.params.get(&#x27;id&#x27;);
+
+                // Find the event and delete it
+                const index &#x3D; this._events.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id);
+                this._events.splice(index, 1);
+
+                // Return the response
+                return [200, true];
+            });
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Recurring Event - PATCH
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onPatch(&#x27;api/apps/calendar/recurring-event&#x27;)
+            .reply(({request}) &#x3D;&gt; {
+
+                // Get the event, original event and mode
+                const event &#x3D; cloneDeep(request.body.event);
+                const originalEvent &#x3D; cloneDeep(request.body.originalEvent);
+                const mode &#x3D; request.body.mode;
+
+                // Find the original recurring event from db
+                const recurringEvent &#x3D; this._events.find(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; event.recurringEventId);
+
+                // Single
+                if ( mode &#x3D;&#x3D;&#x3D; &#x27;single&#x27; )
+                {
+                    // Create a new event from the event while ignoring the range and recurringEventId
+                    const {
+                              range,
+                              recurringEventId,
+                              ...newEvent
+                          } &#x3D; event;
+
+                    // Generate a unique id for the event
+                    newEvent.id &#x3D; FuseMockApiUtils.guid();
+
+                    // Calculate the end date using the start date and the duration
+                    newEvent.end &#x3D; moment(newEvent.start).add(newEvent.duration, &#x27;minutes&#x27;);
+
+                    // Null-ify the recurrence and duration
+                    newEvent.duration &#x3D; null;
+                    newEvent.recurrence &#x3D; null;
+
+                    // Push the new event to the events array
+                    this._events.push(newEvent);
+
+                    // If this is the first instance of the recurring event...
+                    if ( originalEvent.start &#x3D;&#x3D;&#x3D; recurringEvent.start )
+                    {
+                        // Generate the rruleset
+                        const rruleset &#x3D; this._generateRuleset(recurringEvent, moment(recurringEvent.start), moment(recurringEvent.end).utc());
+
+                        // Generate the dates using rruleset and get the 2nd date from start
+                        const ruleDate &#x3D; moment(rruleset.all((date, i) &#x3D;&gt; i &lt; 2)[1]);
+
+                        // Subtract the UTC Offset from the rule date as we use local time for DTSTART.
+                        // The reason for this is simple; if we use UTC dates for DTSTART, RRule generated
+                        // dates can shift. Since we have to store the dates as UTC, we can figure out the
+                        // UTC value by simply subtracting the UTC Offset (minutes) from the rule date rather
+                        // than using UTC dates in the first place. This will ensure there will be no time/day
+                        // shift on generated rules since they will be generated based on the local time.
+                        ruleDate.subtract(ruleDate.utcOffset(), &#x27;minutes&#x27;);
+
+                        // Update the recurring event&#x27;s start date
+                        recurringEvent.start &#x3D; ruleDate.toISOString();
+                    }
+                    // Otherwise...
+                    else
+                    {
+                        // Add a new exception for the recurring event that ignores this single event&#x27;s start date
+                        this._exceptions.push({
+                            id     : FuseMockApiUtils.guid(),
+                            eventId: originalEvent.recurringEventId,
+                            exdate : moment(originalEvent.start).toISOString()
+                        });
+                    }
+                }
+
+                // Future
+                if ( mode &#x3D;&#x3D;&#x3D; &#x27;future&#x27; )
+                {
+                    // Update the end date
+                    recurringEvent.end &#x3D; moment(originalEvent.start).subtract(1, &#x27;day&#x27;).endOf(&#x27;day&#x27;).toISOString();
+
+                    // Parse the recurrence rules from the original event
+                    const parsedRules: any &#x3D; {};
+                    originalEvent.recurrence.split(&#x27;;&#x27;).forEach((rule: string) &#x3D;&gt; {
+                        const parsedRule &#x3D; rule.split(&#x27;&#x3D;&#x27;);
+                        parsedRules[parsedRule[0]] &#x3D; parsedRule[1];
+                    });
+
+                    // Add/Update the UNTIL rule
+                    parsedRules[&#x27;UNTIL&#x27;] &#x3D; moment(recurringEvent.end).utc().format(&#x27;YYYYMMDD[T]HHmmss[Z]&#x27;);
+
+                    // Generate the rule string from the parsed rules
+                    const rules: string[] &#x3D; [];
+                    Object.keys(parsedRules).forEach((key) &#x3D;&gt; {
+                        rules.push(key + &#x27;&#x3D;&#x27; + parsedRules[key]);
+                    });
+
+                    // Update the recurrence on the original recurring event
+                    recurringEvent.recurrence &#x3D; rules.join(&#x27;;&#x27;);
+
+                    // Create a new event from the event while ignoring the recurringEventId
+                    const {
+                              recurringEventId,
+                              ...newEvent
+                          } &#x3D; event;
+
+                    // Generate a unique id for the event
+                    newEvent.id &#x3D; FuseMockApiUtils.guid();
+
+                    // Push the new event to the events array
+                    this._events.push(newEvent);
+                }
+
+                // All
+                if ( mode &#x3D;&#x3D;&#x3D; &#x27;all&#x27; )
+                {
+                    // Find the event index
+                    const eventIndex &#x3D; this._events.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; event.recurringEventId);
+
+                    // Update the recurring event
+                    this._events[eventIndex] &#x3D; assign({}, this._events[eventIndex], omit(event, [&#x27;id&#x27;, &#x27;recurringEventId&#x27;, &#x27;range&#x27;]));
+                }
+
+                // Return the response
+                return [200, true];
+            });
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Recurring Event - DELETE
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onDelete(&#x27;api/apps/calendar/recurring-event&#x27;)
+            .reply(({request}) &#x3D;&gt; {
+
+                // Get the event and mode
+                const event &#x3D; JSON.parse(request.params.get(&#x27;event&#x27;) ?? &#x27;&#x27;);
+                const mode &#x3D; request.params.get(&#x27;mode&#x27;);
+
+                // Find the recurring event
+                const recurringEvent &#x3D; this._events.find(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; event.recurringEventId);
+
+                // Single
+                if ( mode &#x3D;&#x3D;&#x3D; &#x27;single&#x27; )
+                {
+                    // If this is the first instance of the recurring event...
+                    if ( event.start &#x3D;&#x3D;&#x3D; recurringEvent.start )
+                    {
+                        // Generate the rruleset
+                        const rruleset &#x3D; this._generateRuleset(recurringEvent, moment(recurringEvent.start), moment(recurringEvent.end).utc());
+
+                        // Generate the dates using rruleset and get the 2nd date from start
+                        const ruleDate &#x3D; moment(rruleset.all((date, i) &#x3D;&gt; i &lt; 2)[1]);
+
+                        // Subtract the UTC Offset from the rule date as we use local time for DTSTART.
+                        // The reason for this is simple; if we use UTC dates for DTSTART, RRule generated
+                        // dates can shift. Since we have to store the dates as UTC, we can figure out the
+                        // UTC value by simply subtracting the UTC Offset (minutes) from the rule date rather
+                        // than using UTC dates in the first place. This will ensure there will be no time/day
+                        // shift on generated rules since they will be generated based on the local time.
+                        ruleDate.subtract(ruleDate.utcOffset(), &#x27;minutes&#x27;);
+
+                        // Update the recurring event&#x27;s start date
+                        recurringEvent.start &#x3D; ruleDate.toISOString();
+                    }
+                    // Otherwise...
+                    else
+                    {
+                        // Add a new exception for the recurring event that ignores this single event&#x27;s start date
+                        this._exceptions.push({
+                            id     : FuseMockApiUtils.guid(),
+                            eventId: event.recurringEventId,
+                            exdate : moment(event.start).toISOString()
+                        });
+                    }
+                }
+
+                // Future
+                if ( mode &#x3D;&#x3D;&#x3D; &#x27;future&#x27; )
+                {
+                    // Update the end date of the event
+                    recurringEvent.end &#x3D; moment(event.start).subtract(1, &#x27;day&#x27;).endOf(&#x27;day&#x27;).toISOString();
+
+                    // Parse the recurrence rules of the event
+                    const parsedRules: any &#x3D; {};
+                    recurringEvent.recurrence.split(&#x27;;&#x27;).forEach((rule: string) &#x3D;&gt; {
+                        const parsedRule &#x3D; rule.split(&#x27;&#x3D;&#x27;);
+                        parsedRules[parsedRule[0]] &#x3D; parsedRule[1];
+                    });
+
+                    // Add/Update the UNTIL rule
+                    parsedRules[&#x27;UNTIL&#x27;] &#x3D; moment(event.end).utc().format(&#x27;YYYYMMDD[T]HHmmss[Z]&#x27;);
+
+                    // Generate the rule string from the parsed rules
+                    const rules: string[] &#x3D; [];
+                    Object.keys(parsedRules).forEach((key) &#x3D;&gt; {
+                        rules.push(key + &#x27;&#x3D;&#x27; + parsedRules[key]);
+                    });
+
+                    // Update the recurrence of the event
+                    recurringEvent.recurrence &#x3D; rules.join(&#x27;;&#x27;);
+                }
+
+                // All
+                if ( mode &#x3D;&#x3D;&#x3D; &#x27;all&#x27; )
+                {
+                    // Find the event and delete it
+                    const index &#x3D; this._events.findIndex(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; event.recurringEventId);
+                    this._events.splice(index, 1);
+                }
+
+                // Return the response
+                return [200, true];
+            });
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Settings - GET
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onGet(&#x27;api/apps/calendar/settings&#x27;)
+            .reply(() &#x3D;&gt; [200, cloneDeep(this._settings)]);
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Settings - PATCH
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onPatch(&#x27;api/apps/calendar/settings&#x27;)
+            .reply(({request}) &#x3D;&gt; {
+
+                // Get the settings
+                const settings &#x3D; cloneDeep(request.body.settings);
+
+                // Store the updated settings
+                this._settings &#x3D; settings;
+
+                // Return the response
+                return [200, settings];
+            });
+
+        // -----------------------------------------------------------------------------------------------------
+        // @ Weekdays - GET
+        // -----------------------------------------------------------------------------------------------------
+        this._fuseMockApiService
+            .onGet(&#x27;api/apps/calendar/weekdays&#x27;)
+            .reply(() &#x3D;&gt; {
+
+                // Clone the weekdays
+                const weekdays &#x3D; cloneDeep(this._weekdays);
+
+                // If the startWeekOn setting is set to Sunday...
+                if ( this._settings.startWeekOn &#x3D;&#x3D;&#x3D; 0 )
+                {
+                    // Move the Sunday to the beginning
+                    weekdays.unshift(weekdays.pop());
+                }
+
+                // If the startWeekOn is set to Saturday...
+                if ( this._settings.startWeekOn &#x3D;&#x3D;&#x3D; 6 )
+                {
+                    // Move the Sunday to the beginning
+                    weekdays.unshift(weekdays.pop());
+
+                    // Then move the Saturday to the beginning
+                    weekdays.unshift(weekdays.pop());
+                }
+
+                // Return the response
+                return [200, weekdays];
+            });
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Private methods
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Generates an RRuleSet from given event
+     *
+     * @param event
+     * @param dtStart
+     * @param until
+     * @private
+     */
+    private _generateRuleset(event: any, dtStart: any, until: any): RRuleSet | RRule
+    {
+        // Parse the recurrence rules
+        const parsedRules: any &#x3D; {};
+        event.recurrence.split(&#x27;;&#x27;).forEach((rule: string) &#x3D;&gt; {
+
+            // Split the rule
+            const parsedRule &#x3D; rule.split(&#x27;&#x3D;&#x27;);
+
+            // Omit UNTIL or COUNT from the parsed rules since we only
+            // need them for calculating the event&#x27;s end date. We will
+            // add an UNTIL later based on the above calculations.
+            if ( parsedRule[0] &#x3D;&#x3D;&#x3D; &#x27;UNTIL&#x27; || parsedRule[0] &#x3D;&#x3D;&#x3D; &#x27;COUNT&#x27; )
+            {
+                return;
+            }
+
+            // Add the rule to the parsed rules
+            parsedRules[parsedRule[0]] &#x3D; parsedRule[1];
+        });
+
+        // Generate the rule array from the parsed rules
+        const rules: string[] &#x3D; [];
+        Object.keys(parsedRules).forEach((key) &#x3D;&gt; {
+            rules.push(key + &#x27;&#x3D;&#x27; + parsedRules[key]);
+        });
+
+        // Prepare the ruleSet
+        const ruleSet &#x3D; [];
+
+        // Add DTSTART
+        ruleSet.push(&#x27;DTSTART:&#x27; + dtStart.format(&#x27;YYYYMMDD[T]HHmmss[Z]&#x27;));
+
+        // Add RRULE
+        ruleSet.push(&#x27;RRULE:&#x27; + rules.join(&#x27;;&#x27;) + &#x27;;UNTIL&#x3D;&#x27; + until.format(&#x27;YYYYMMDD[T]HHmmss[Z]&#x27;));
+
+        // Find and add any available exceptions to the rule
+        this._exceptions.forEach((item) &#x3D;&gt; {
+
+            // If the item is an exception to this event...
+            if ( item.eventId &#x3D;&#x3D;&#x3D; event.id )
+            {
+                // Add it as an EXDATE to the rrule
+                ruleSet.push(&#x27;EXDATE:&#x27; + moment(item.exdate).format(&#x27;YYYYMMDD[T]HHmmss[Z]&#x27;));
+            }
+        });
+
+        // Create an RRuleSet from the ruleSet array
+        return rrulestr(ruleSet.join(&#x27;\n&#x27;), {forceset: true});
+    }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'CalendarMockApi.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

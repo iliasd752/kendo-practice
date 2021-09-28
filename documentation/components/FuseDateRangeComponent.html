@@ -1,0 +1,3557 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@fuse/demo documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">@fuse/demo documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  FuseDateRangeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/@fuse/components/date-range/date-range.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/forms/ControlValueAccessor" target="_blank" >ControlValueAccessor</a></code>
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+            <tr>
+                <td class="col-md-3">encapsulation</td>
+                <td class="col-md-9"><code>ViewEncapsulation.None</code></td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">exportAs</td>
+                <td class="col-md-9"><code>fuseDateRange</code></td>
+            </tr>
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                            <code>{
+    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() &#x3D;&gt; FuseDateRangeComponent), multi: true
+}</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>fuse-date-range</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./date-range.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./date-range.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_dateFormat" >_dateFormat</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_defaultClassNames" >_defaultClassNames</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_matMonthView1" >_matMonthView1</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_matMonthView2" >_matMonthView2</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_onChange" >_onChange</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_onTouched" >_onTouched</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_pickerPanel" >_pickerPanel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_pickerPanelOrigin" >_pickerPanelOrigin</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_programmaticChange" >_programmaticChange</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_range" >_range</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_timeFormat" >_timeFormat</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_timeRange" >_timeRange</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#_timeRegExp" >_timeRegExp</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_unsubscribeAll" >_unsubscribeAll</a>
+                            </li>
+                            <li>
+                                <a href="#activeDates" >activeDates</a>
+                            </li>
+                            <li>
+                                <a href="#endTimeFormControl" >endTimeFormControl</a>
+                            </li>
+                            <li>
+                                <a href="#setWhichDate" >setWhichDate</a>
+                            </li>
+                            <li>
+                                <a href="#startTimeFormControl" >startTimeFormControl</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_init" >_init</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_parseTime" >_parseTime</a>
+                            </li>
+                            <li>
+                                <a href="#dateClass" >dateClass</a>
+                            </li>
+                            <li>
+                                <a href="#dateFilter" >dateFilter</a>
+                            </li>
+                            <li>
+                                <a href="#getMonthLabel" >getMonthLabel</a>
+                            </li>
+                            <li>
+                                <a href="#next" >next</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSelectedDateChange" >onSelectedDateChange</a>
+                            </li>
+                            <li>
+                                <a href="#openPickerPanel" >openPickerPanel</a>
+                            </li>
+                            <li>
+                                <a href="#prev" >prev</a>
+                            </li>
+                            <li>
+                                <a href="#registerOnChange" >registerOnChange</a>
+                            </li>
+                            <li>
+                                <a href="#registerOnTouched" >registerOnTouched</a>
+                            </li>
+                            <li>
+                                <a href="#updateEndTime" >updateEndTime</a>
+                            </li>
+                            <li>
+                                <a href="#updateStartTime" >updateStartTime</a>
+                            </li>
+                            <li>
+                                <a href="#writeValue" >writeValue</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#dateFormat" >dateFormat</a>
+                            </li>
+                            <li>
+                                <a href="#range" >range</a>
+                            </li>
+                            <li>
+                                <a href="#timeFormat" >timeFormat</a>
+                            </li>
+                            <li>
+                                <a href="#timeRange" >timeRange</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#rangeChanged" >rangeChanged</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostBindings</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#class.fuse-date-range" >class.fuse-date-range</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#dateFormat" >dateFormat</a>
+                                </li>
+                                <li>
+                                    <a href="#timeFormat" >timeFormat</a>
+                                </li>
+                                <li>
+                                    <a href="#timeRange" >timeRange</a>
+                                </li>
+                                <li>
+                                    <a href="#range" >range</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_changeDetectorRef: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>, _elementRef: <a href="https://angular.io/api/core/ElementRef" target="_blank">ElementRef</a>, _overlay: Overlay, _renderer2: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, _viewContainerRef: <a href="https://angular.io/api/core/ViewContainerRef" target="_blank">ViewContainerRef</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_changeDetectorRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_elementRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_overlay</td>
+                                                  
+                                                        <td>
+                                                                    <code>Overlay</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_renderer2</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_viewContainerRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ViewContainerRef" target="_blank" >ViewContainerRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dateFormat"></a>
+                        <b>dateFormat</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:85</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Setter &amp; getter for dateFormat input</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="range"></a>
+                        <b>range</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:163</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Setter &amp; getter for range input</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timeFormat"></a>
+                        <b>timeFormat</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:108</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Setter &amp; getter for timeFormat input</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timeRange"></a>
+                        <b>timeRange</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="131" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:131</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Setter &amp; getter for timeRange input</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rangeChanged"></a>
+                        <b>rangeChanged</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter&lt;literal type&gt;</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:26</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3>HostBindings</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="class.fuse-date-range"></a>
+                    <span class="name">
+                        <span ><b>class.fuse-date-range</b></span>
+                        <a href="#class.fuse-date-range"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_init"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>_init</b></span>
+                        <a href="#_init"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_init()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="640"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:640</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialize</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_parseTime"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>_parseTime</b></span>
+                        <a href="#_parseTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_parseTime(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="664"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:664</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Parse the time from the inputs</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Moment</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dateClass"></a>
+                    <span class="name">
+                        <span ><b>dateClass</b></span>
+                        <a href="#dateClass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>dateClass()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="447"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:447</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Date class function to add/remove class names to calendar days</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dateFilter"></a>
+                    <span class="name">
+                        <span ><b>dateFilter</b></span>
+                        <a href="#dateFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>dateFilter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="482"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:482</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Date filter to enable/disable calendar days</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMonthLabel"></a>
+                    <span class="name">
+                        <span ><b>getMonthLabel</b></span>
+                        <a href="#getMonthLabel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMonthLabel(month: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="434"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:434</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get month label</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>month</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="next"></a>
+                    <span class="name">
+                        <span ><b>next</b></span>
+                        <a href="#next"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>next()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="535"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:535</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Go to next month on both views</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="357"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:357</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>On destroy</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="349"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:349</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>On init</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSelectedDateChange"></a>
+                    <span class="name">
+                        <span ><b>onSelectedDateChange</b></span>
+                        <a href="#onSelectedDateChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSelectedDateChange(date: Moment)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="493"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:493</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>On selected date change</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                            <code>Moment</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openPickerPanel"></a>
+                    <span class="name">
+                        <span ><b>openPickerPanel</b></span>
+                        <a href="#openPickerPanel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openPickerPanel()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="375"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:375</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Open the picker panel</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="prev"></a>
+                    <span class="name">
+                        <span ><b>prev</b></span>
+                        <a href="#prev"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>prev()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="526"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:526</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Go to previous month on both views</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registerOnChange"></a>
+                    <span class="name">
+                        <span ><b>registerOnChange</b></span>
+                        <a href="#registerOnChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>registerOnChange(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="313"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:313</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the form model on change</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fn</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registerOnTouched"></a>
+                    <span class="name">
+                        <span ><b>registerOnTouched</b></span>
+                        <a href="#registerOnTouched"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>registerOnTouched(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="323"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:323</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the form model on blur</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fn</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateEndTime"></a>
+                    <span class="name">
+                        <span ><b>updateEndTime</b></span>
+                        <a href="#updateEndTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateEndTime(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="591"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:591</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the end time</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateStartTime"></a>
+                    <span class="name">
+                        <span ><b>updateStartTime</b></span>
+                        <a href="#updateStartTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateStartTime(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="546"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:546</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the start time</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="writeValue"></a>
+                    <span class="name">
+                        <span ><b>writeValue</b></span>
+                        <a href="#writeValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>writeValue(range: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="333"
+                            class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:333</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Write to view from model when the form model changes programmatically</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>range</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_dateFormat"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_dateFormat</b></span>
+                        <a href="#_dateFormat"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_defaultClassNames"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_defaultClassNames</b></span>
+                        <a href="#_defaultClassNames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @HostBinding(&#x27;class.fuse-date-range&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_matMonthView1"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_matMonthView1</b></span>
+                        <a href="#_matMonthView1"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatMonthView&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;matMonthView1&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_matMonthView2"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_matMonthView2</b></span>
+                        <a href="#_matMonthView2"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatMonthView&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;matMonthView2&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_onChange"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_onChange</b></span>
+                        <a href="#_onChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_onTouched"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_onTouched</b></span>
+                        <a href="#_onTouched"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_pickerPanel"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_pickerPanel</b></span>
+                        <a href="#_pickerPanel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>TemplateRef&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;pickerPanel&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_pickerPanelOrigin"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_pickerPanelOrigin</b></span>
+                        <a href="#_pickerPanelOrigin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;pickerPanelOrigin&#x27;, {read: ElementRef})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_programmaticChange"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_programmaticChange</b></span>
+                        <a href="#_programmaticChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_range"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_range</b></span>
+                        <a href="#_range"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+        start: null,
+        end  : null
+    }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_timeFormat"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_timeFormat</b></span>
+                        <a href="#_timeFormat"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_timeRange"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_timeRange</b></span>
+                        <a href="#_timeRange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_timeRegExp"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>_timeRegExp</b></span>
+                        <a href="#_timeRegExp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>RegExp</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new RegExp(&#x27;^(0[0-9]|1[0-9]|2[0-4]|[0-9]):([0-5][0-9])(A|(?:AM)|P|(?:PM))?$&#x27;, &#x27;i&#x27;)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_unsubscribeAll"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_unsubscribeAll</b></span>
+                        <a href="#_unsubscribeAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subject&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;any&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activeDates"></a>
+                    <span class="name">
+                        <span ><b>activeDates</b></span>
+                        <a href="#activeDates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+        month1: null,
+        month2: null
+    }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="endTimeFormControl"></a>
+                    <span class="name">
+                        <span ><b>endTimeFormControl</b></span>
+                        <a href="#endTimeFormControl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormControl" target="_blank" >FormControl</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setWhichDate"></a>
+                    <span class="name">
+                        <span ><b>setWhichDate</b></span>
+                        <a href="#setWhichDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>&quot;start&quot; | &quot;end&quot;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;start&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startTimeFormControl"></a>
+                    <span class="name">
+                        <span ><b>startTimeFormControl</b></span>
+                        <a href="#startTimeFormControl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormControl" target="_blank" >FormControl</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dateFormat"></a>
+                        <span class="name"><b>dateFormat</b><a href="#dateFormat"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>dateFormat()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:97</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>dateFormat(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:85</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Setter &amp; getter for dateFormat input</p>
+</div>
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>value</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timeFormat"></a>
+                        <span class="name"><b>timeFormat</b><a href="#timeFormat"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>timeFormat()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:120</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>timeFormat(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:108</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Setter &amp; getter for timeFormat input</p>
+</div>
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>value</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timeRange"></a>
+                        <span class="name"><b>timeRange</b><a href="#timeRange"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>timeRange()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:152</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>timeRange(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="131" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:131</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Setter &amp; getter for timeRange input</p>
+</div>
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>value</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="range"></a>
+                        <span class="name"><b>range</b><a href="#range"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>range()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="289" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:289</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>range(value)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/@fuse/components/date-range/date-range.component.ts:163</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Setter &amp; getter for range input</p>
+</div>
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>value</td>
+                                                    
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ChangeDetectorRef, Component, ElementRef, EventEmitter, forwardRef, HostBinding, Input, OnDestroy, OnInit, Output, Renderer2, TemplateRef, ViewChild, ViewContainerRef, ViewEncapsulation } from &#x27;@angular/core&#x27;;
+import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR, Validators } from &#x27;@angular/forms&#x27;;
+import { Overlay } from &#x27;@angular/cdk/overlay&#x27;;
+import { TemplatePortal } from &#x27;@angular/cdk/portal&#x27;;
+import { MatCalendarCellCssClasses, MatMonthView } from &#x27;@angular/material/datepicker&#x27;;
+import { Subject } from &#x27;rxjs&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import { Moment } from &#x27;moment&#x27;;
+
+@Component({
+    selector     : &#x27;fuse-date-range&#x27;,
+    templateUrl  : &#x27;./date-range.component.html&#x27;,
+    styleUrls    : [&#x27;./date-range.component.scss&#x27;],
+    encapsulation: ViewEncapsulation.None,
+    exportAs     : &#x27;fuseDateRange&#x27;,
+    providers    : [
+        {
+            provide    : NG_VALUE_ACCESSOR,
+            useExisting: forwardRef(() &#x3D;&gt; FuseDateRangeComponent),
+            multi      : true
+        }
+    ]
+})
+export class FuseDateRangeComponent implements ControlValueAccessor, OnInit, OnDestroy
+{
+    @Output() readonly rangeChanged: EventEmitter&lt;{ start: string; end: string }&gt; &#x3D; new EventEmitter&lt;{ start: string; end: string }&gt;();
+    @ViewChild(&#x27;matMonthView1&#x27;) private _matMonthView1: MatMonthView&lt;any&gt;;
+    @ViewChild(&#x27;matMonthView2&#x27;) private _matMonthView2: MatMonthView&lt;any&gt;;
+    @ViewChild(&#x27;pickerPanelOrigin&#x27;, {read: ElementRef}) private _pickerPanelOrigin: ElementRef;
+    @ViewChild(&#x27;pickerPanel&#x27;) private _pickerPanel: TemplateRef&lt;any&gt;;
+    @HostBinding(&#x27;class.fuse-date-range&#x27;) private _defaultClassNames &#x3D; true;
+
+    activeDates: { month1: Moment | null; month2: Moment | null } &#x3D; {
+        month1: null,
+        month2: null
+    };
+    setWhichDate: &#x27;start&#x27; | &#x27;end&#x27; &#x3D; &#x27;start&#x27;;
+    startTimeFormControl: FormControl;
+    endTimeFormControl: FormControl;
+    private _dateFormat: string;
+    private _onChange: (value: any) &#x3D;&gt; void;
+    private _onTouched: (value: any) &#x3D;&gt; void;
+    private _programmaticChange!: boolean;
+    private _range: { start: Moment | null; end: Moment | null } &#x3D; {
+        start: null,
+        end  : null
+    };
+    private _timeFormat: string;
+    private _timeRange: boolean;
+    private readonly _timeRegExp: RegExp &#x3D; new RegExp(&#x27;^(0[0-9]|1[0-9]|2[0-4]|[0-9]):([0-5][0-9])(A|(?:AM)|P|(?:PM))?$&#x27;, &#x27;i&#x27;);
+    private _unsubscribeAll: Subject&lt;any&gt; &#x3D; new Subject&lt;any&gt;();
+
+    /**
+     * Constructor
+     */
+    constructor(
+        private _changeDetectorRef: ChangeDetectorRef,
+        private _elementRef: ElementRef,
+        private _overlay: Overlay,
+        private _renderer2: Renderer2,
+        private _viewContainerRef: ViewContainerRef
+    )
+    {
+        this._onChange &#x3D; (): void &#x3D;&gt; {
+        };
+        this._onTouched &#x3D; (): void &#x3D;&gt; {
+        };
+        this.dateFormat &#x3D; &#x27;DD/MM/YYYY&#x27;;
+        this.timeFormat &#x3D; &#x27;12&#x27;;
+
+        // Initialize the component
+        this._init();
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Accessors
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Setter &amp; getter for dateFormat input
+     *
+     * @param value
+     */
+    @Input()
+    set dateFormat(value: string)
+    {
+        // Return if the values are the same
+        if ( this._dateFormat &#x3D;&#x3D;&#x3D; value )
+        {
+            return;
+        }
+
+        // Store the value
+        this._dateFormat &#x3D; value;
+    }
+
+    get dateFormat(): string
+    {
+        return this._dateFormat;
+    }
+
+    /**
+     * Setter &amp; getter for timeFormat input
+     *
+     * @param value
+     */
+    @Input()
+    set timeFormat(value: string)
+    {
+        // Return if the values are the same
+        if ( this._timeFormat &#x3D;&#x3D;&#x3D; value )
+        {
+            return;
+        }
+
+        // Set format based on the time format input
+        this._timeFormat &#x3D; value &#x3D;&#x3D;&#x3D; &#x27;12&#x27; ? &#x27;hh:mmA&#x27; : &#x27;HH:mm&#x27;;
+    }
+
+    get timeFormat(): string
+    {
+        return this._timeFormat;
+    }
+
+    /**
+     * Setter &amp; getter for timeRange input
+     *
+     * @param value
+     */
+    @Input()
+    set timeRange(value: boolean)
+    {
+        // Return if the values are the same
+        if ( this._timeRange &#x3D;&#x3D;&#x3D; value )
+        {
+            return;
+        }
+
+        // Store the value
+        this._timeRange &#x3D; value;
+
+        // If the time range turned off...
+        if ( !value )
+        {
+            this.range &#x3D; {
+                start: this._range.start.clone().startOf(&#x27;day&#x27;),
+                end  : this._range.end.clone().endOf(&#x27;day&#x27;)
+            };
+        }
+    }
+
+    get timeRange(): boolean
+    {
+        return this._timeRange;
+    }
+
+    /**
+     * Setter &amp; getter for range input
+     *
+     * @param value
+     */
+    @Input()
+    set range(value)
+    {
+        if ( !value )
+        {
+            return;
+        }
+
+        // Check if the value is an object and has &#x27;start&#x27; and &#x27;end&#x27; values
+        if ( !value.start || !value.end )
+        {
+            console.error(&#x27;Range input must have &quot;start&quot; and &quot;end&quot; properties!&#x27;);
+
+            return;
+        }
+
+        // Check if we are setting an individual date or both of them
+        const whichDate &#x3D; value.whichDate || null;
+
+        // Get the start and end dates as moment
+        const start &#x3D; moment(value.start);
+        const end &#x3D; moment(value.end);
+
+        // If we are only setting the start date...
+        if ( whichDate &#x3D;&#x3D;&#x3D; &#x27;start&#x27; )
+        {
+            // Set the start date
+            this._range.start &#x3D; start.clone();
+
+            // If the selected start date is after the end date...
+            if ( this._range.start.isAfter(this._range.end) )
+            {
+                // Set the end date to the start date but keep the end date&#x27;s time
+                const endDate &#x3D; start.clone().hours(this._range.end.hours()).minutes(this._range.end.minutes()).seconds(this._range.end.seconds());
+
+                // Test this new end date to see if it&#x27;s ahead of the start date
+                if ( this._range.start.isBefore(endDate) )
+                {
+                    // If it&#x27;s, set the new end date
+                    this._range.end &#x3D; endDate;
+                }
+                else
+                {
+                    // Otherwise, set the end date same as the start date
+                    this._range.end &#x3D; start.clone();
+                }
+            }
+        }
+
+        // If we are only setting the end date...
+        if ( whichDate &#x3D;&#x3D;&#x3D; &#x27;end&#x27; )
+        {
+            // Set the end date
+            this._range.end &#x3D; end.clone();
+
+            // If the selected end date is before the start date...
+            if ( this._range.start.isAfter(this._range.end) )
+            {
+                // Set the start date to the end date but keep the start date&#x27;s time
+                const startDate &#x3D; end.clone().hours(this._range.start.hours()).minutes(this._range.start.minutes()).seconds(this._range.start.seconds());
+
+                // Test this new end date to see if it&#x27;s ahead of the start date
+                if ( this._range.end.isAfter(startDate) )
+                {
+                    // If it&#x27;s, set the new start date
+                    this._range.start &#x3D; startDate;
+                }
+                else
+                {
+                    // Otherwise, set the start date same as the end date
+                    this._range.start &#x3D; end.clone();
+                }
+            }
+        }
+
+        // If we are setting both dates...
+        if ( !whichDate )
+        {
+            // Set the start date
+            this._range.start &#x3D; start.clone();
+
+            // If the start date is before the end date, set the end date as normal.
+            // If the start date is after the end date, set the end date same as the start date.
+            this._range.end &#x3D; start.isBefore(end) ? end.clone() : start.clone();
+        }
+
+        // Prepare another range object that holds the ISO formatted range dates
+        const range &#x3D; {
+            start: this._range.start.clone().toISOString(),
+            end  : this._range.end.clone().toISOString()
+        };
+
+        // Emit the range changed event with the range
+        this.rangeChanged.emit(range);
+
+        // Update the model with the range if the change was not a programmatic change
+        // Because programmatic changes trigger writeValue which triggers onChange and onTouched
+        // internally causing them to trigger twice which breaks the form&#x27;s pristine and touched
+        // statuses.
+        if ( !this._programmaticChange )
+        {
+            this._onTouched(range);
+            this._onChange(range);
+        }
+
+        // Set the active dates
+        this.activeDates &#x3D; {
+            month1: this._range.start.clone(),
+            month2: this._range.start.clone().add(1, &#x27;month&#x27;)
+        };
+
+        // Set the time form controls
+        this.startTimeFormControl.setValue(this._range.start.clone().format(this._timeFormat).toString());
+        this.endTimeFormControl.setValue(this._range.end.clone().format(this._timeFormat).toString());
+
+        // Run ngAfterContentInit on month views to trigger
+        // re-render on month views if they are available
+        if ( this._matMonthView1 &amp;&amp; this._matMonthView2 )
+        {
+            this._matMonthView1.ngAfterContentInit();
+            this._matMonthView2.ngAfterContentInit();
+        }
+
+        // Reset the programmatic change status
+        this._programmaticChange &#x3D; false;
+    }
+
+    get range(): any
+    {
+        // Clone the range start and end
+        const start &#x3D; this._range.start.clone();
+        const end &#x3D; this._range.end.clone();
+
+        // Build and return the range object
+        return {
+            startDate: start.clone().format(this.dateFormat),
+            startTime: this.timeRange ? start.clone().format(this.timeFormat) : null,
+            endDate  : end.clone().format(this.dateFormat),
+            endTime  : this.timeRange ? end.clone().format(this.timeFormat) : null
+        };
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Control Value Accessor
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Update the form model on change
+     *
+     * @param fn
+     */
+    registerOnChange(fn: any): void
+    {
+        this._onChange &#x3D; fn;
+    }
+
+    /**
+     * Update the form model on blur
+     *
+     * @param fn
+     */
+    registerOnTouched(fn: any): void
+    {
+        this._onTouched &#x3D; fn;
+    }
+
+    /**
+     * Write to view from model when the form model changes programmatically
+     *
+     * @param range
+     */
+    writeValue(range: { start: string; end: string }): void
+    {
+        // Set this change as a programmatic one
+        this._programmaticChange &#x3D; true;
+
+        // Set the range
+        this.range &#x3D; range;
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Lifecycle hooks
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * On init
+     */
+    ngOnInit(): void
+    {
+
+    }
+
+    /**
+     * On destroy
+     */
+    ngOnDestroy(): void
+    {
+        // Unsubscribe from all subscriptions
+        this._unsubscribeAll.next();
+        this._unsubscribeAll.complete();
+
+        // @ TODO: Workaround until &quot;angular/issues/20007&quot; resolved
+        this.writeValue &#x3D; (): void &#x3D;&gt; {
+        };
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Public methods
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Open the picker panel
+     */
+    openPickerPanel(): void
+    {
+        // Create the overlay
+        const overlayRef &#x3D; this._overlay.create({
+            panelClass      : &#x27;fuse-date-range-panel&#x27;,
+            backdropClass   : &#x27;&#x27;,
+            hasBackdrop     : true,
+            scrollStrategy  : this._overlay.scrollStrategies.reposition(),
+            positionStrategy: this._overlay.position()
+                                  .flexibleConnectedTo(this._pickerPanelOrigin)
+                                  .withPositions([
+                                      {
+                                          originX : &#x27;start&#x27;,
+                                          originY : &#x27;bottom&#x27;,
+                                          overlayX: &#x27;start&#x27;,
+                                          overlayY: &#x27;top&#x27;,
+                                          offsetY : 8
+                                      },
+                                      {
+                                          originX : &#x27;start&#x27;,
+                                          originY : &#x27;top&#x27;,
+                                          overlayX: &#x27;start&#x27;,
+                                          overlayY: &#x27;bottom&#x27;,
+                                          offsetY : -8
+                                      }
+                                  ])
+        });
+
+        // Create a portal from the template
+        const templatePortal &#x3D; new TemplatePortal(this._pickerPanel, this._viewContainerRef);
+
+        // On backdrop click
+        overlayRef.backdropClick().subscribe(() &#x3D;&gt; {
+
+            // If template portal exists and attached...
+            if ( templatePortal &amp;&amp; templatePortal.isAttached )
+            {
+                // Detach it
+                templatePortal.detach();
+            }
+
+            // If overlay exists and attached...
+            if ( overlayRef &amp;&amp; overlayRef.hasAttached() )
+            {
+                // Detach it
+                overlayRef.detach();
+                overlayRef.dispose();
+            }
+        });
+
+        // Attach the portal to the overlay
+        overlayRef.attach(templatePortal);
+    }
+
+    /**
+     * Get month label
+     *
+     * @param month
+     */
+    getMonthLabel(month: number): string
+    {
+        if ( month &#x3D;&#x3D;&#x3D; 1 )
+        {
+            return this.activeDates.month1.clone().format(&#x27;MMMM Y&#x27;);
+        }
+
+        return this.activeDates.month2.clone().format(&#x27;MMMM Y&#x27;);
+    }
+
+    /**
+     * Date class function to add/remove class names to calendar days
+     */
+    dateClass(): any
+    {
+        return (date: Moment): MatCalendarCellCssClasses &#x3D;&gt; {
+
+            // If the date is both start and end date...
+            if ( date.isSame(this._range.start, &#x27;day&#x27;) &amp;&amp; date.isSame(this._range.end, &#x27;day&#x27;) )
+            {
+                return [&#x27;fuse-date-range&#x27;, &#x27;fuse-date-range-start&#x27;, &#x27;fuse-date-range-end&#x27;];
+            }
+
+            // If the date is the start date...
+            if ( date.isSame(this._range.start, &#x27;day&#x27;) )
+            {
+                return [&#x27;fuse-date-range&#x27;, &#x27;fuse-date-range-start&#x27;];
+            }
+
+            // If the date is the end date...
+            if ( date.isSame(this._range.end, &#x27;day&#x27;) )
+            {
+                return [&#x27;fuse-date-range&#x27;, &#x27;fuse-date-range-end&#x27;];
+            }
+
+            // If the date is in between start and end dates...
+            if ( date.isBetween(this._range.start, this._range.end, &#x27;day&#x27;) )
+            {
+                return [&#x27;fuse-date-range&#x27;, &#x27;fuse-date-range-mid&#x27;];
+            }
+
+            return undefined;
+        };
+    }
+
+    /**
+     * Date filter to enable/disable calendar days
+     */
+    dateFilter(): any
+    {
+        // If we are selecting the end date, disable all the dates that comes before the start date
+        return (date: Moment): boolean &#x3D;&gt; !(this.setWhichDate &#x3D;&#x3D;&#x3D; &#x27;end&#x27; &amp;&amp; date.isBefore(this._range.start, &#x27;day&#x27;));
+    }
+
+    /**
+     * On selected date change
+     *
+     * @param date
+     */
+    onSelectedDateChange(date: Moment): void
+    {
+        // Create a new range object
+        const newRange &#x3D; {
+            start    : this._range.start.clone().toISOString(),
+            end      : this._range.end.clone().toISOString(),
+            whichDate: null
+        };
+
+        // Replace either the start or the end date with the new one
+        // depending on which date we are setting
+        if ( this.setWhichDate &#x3D;&#x3D;&#x3D; &#x27;start&#x27; )
+        {
+            newRange.start &#x3D; moment(newRange.start).year(date.year()).month(date.month()).date(date.date()).toISOString();
+        }
+        else
+        {
+            newRange.end &#x3D; moment(newRange.end).year(date.year()).month(date.month()).date(date.date()).toISOString();
+        }
+
+        // Append the which date to the new range object
+        newRange.whichDate &#x3D; this.setWhichDate;
+
+        // Switch which date to set on the next run
+        this.setWhichDate &#x3D; this.setWhichDate &#x3D;&#x3D;&#x3D; &#x27;start&#x27; ? &#x27;end&#x27; : &#x27;start&#x27;;
+
+        // Set the range
+        this.range &#x3D; newRange;
+    }
+
+    /**
+     * Go to previous month on both views
+     */
+    prev(): void
+    {
+        this.activeDates.month1 &#x3D; moment(this.activeDates.month1).subtract(1, &#x27;month&#x27;);
+        this.activeDates.month2 &#x3D; moment(this.activeDates.month2).subtract(1, &#x27;month&#x27;);
+    }
+
+    /**
+     * Go to next month on both views
+     */
+    next(): void
+    {
+        this.activeDates.month1 &#x3D; moment(this.activeDates.month1).add(1, &#x27;month&#x27;);
+        this.activeDates.month2 &#x3D; moment(this.activeDates.month2).add(1, &#x27;month&#x27;);
+    }
+
+    /**
+     * Update the start time
+     *
+     * @param event
+     */
+    updateStartTime(event): void
+    {
+        // Parse the time
+        const parsedTime &#x3D; this._parseTime(event.target.value);
+
+        // Go back to the previous value if the form control is not valid
+        if ( this.startTimeFormControl.invalid )
+        {
+            // Override the time
+            const time &#x3D; this._range.start.clone().format(this._timeFormat);
+
+            // Set the time
+            this.startTimeFormControl.setValue(time);
+
+            // Do not update the range
+            return;
+        }
+
+        // Append the new time to the start date
+        const startDate &#x3D; this._range.start.clone().hours(parsedTime.hours()).minutes(parsedTime.minutes());
+
+        // If the new start date is after the current end date,
+        // use the end date&#x27;s time and set the start date again
+        if ( startDate.isAfter(this._range.end) )
+        {
+            const endDateHours &#x3D; this._range.end.hours();
+            const endDateMinutes &#x3D; this._range.end.minutes();
+
+            // Set the start date
+            startDate.hours(endDateHours).minutes(endDateMinutes);
+        }
+
+        // If everything is okay, set the new date
+        this.range &#x3D; {
+            start    : startDate.toISOString(),
+            end      : this._range.end.clone().toISOString(),
+            whichDate: &#x27;start&#x27;
+        };
+    }
+
+    /**
+     * Update the end time
+     *
+     * @param event
+     */
+    updateEndTime(event): void
+    {
+        // Parse the time
+        const parsedTime &#x3D; this._parseTime(event.target.value);
+
+        // Go back to the previous value if the form control is not valid
+        if ( this.endTimeFormControl.invalid )
+        {
+            // Override the time
+            const time &#x3D; this._range.end.clone().format(this._timeFormat);
+
+            // Set the time
+            this.endTimeFormControl.setValue(time);
+
+            // Do not update the range
+            return;
+        }
+
+        // Append the new time to the end date
+        const endDate &#x3D; this._range.end.clone().hours(parsedTime.hours()).minutes(parsedTime.minutes());
+
+        // If the new end date is before the current start date,
+        // use the start date&#x27;s time and set the end date again
+        if ( endDate.isBefore(this._range.start) )
+        {
+            const startDateHours &#x3D; this._range.start.hours();
+            const startDateMinutes &#x3D; this._range.start.minutes();
+
+            // Set the end date
+            endDate.hours(startDateHours).minutes(startDateMinutes);
+        }
+
+        // If everything is okay, set the new date
+        this.range &#x3D; {
+            start    : this._range.start.clone().toISOString(),
+            end      : endDate.toISOString(),
+            whichDate: &#x27;end&#x27;
+        };
+    }
+
+    // -----------------------------------------------------------------------------------------------------
+    // @ Private methods
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * Initialize
+     *
+     * @private
+     */
+    private _init(): void
+    {
+        // Start and end time form controls
+        this.startTimeFormControl &#x3D; new FormControl(&#x27;&#x27;, [Validators.pattern(this._timeRegExp)]);
+        this.endTimeFormControl &#x3D; new FormControl(&#x27;&#x27;, [Validators.pattern(this._timeRegExp)]);
+
+        // Set the default range
+        this._programmaticChange &#x3D; true;
+        this.range &#x3D; {
+            start: moment().startOf(&#x27;day&#x27;).toISOString(),
+            end  : moment().add(1, &#x27;day&#x27;).endOf(&#x27;day&#x27;).toISOString()
+        };
+
+        // Set the default time range
+        this._programmaticChange &#x3D; true;
+        this.timeRange &#x3D; true;
+    }
+
+    /**
+     * Parse the time from the inputs
+     *
+     * @param value
+     * @private
+     */
+    private _parseTime(value: string): Moment
+    {
+        // Parse the time using the time regexp
+        const timeArr &#x3D; value.split(this._timeRegExp).filter(part &#x3D;&gt; part !&#x3D;&#x3D; &#x27;&#x27;);
+
+        // Get the meridiem
+        const meridiem &#x3D; timeArr[2] || null;
+
+        // If meridiem exists...
+        if ( meridiem )
+        {
+            // Create a moment using 12-hours format and return it
+            return moment(value, &#x27;hh:mmA&#x27;).seconds(0);
+        }
+
+        // If meridiem doesn&#x27;t exist, create a moment using 24-hours format and return in
+        return moment(value, &#x27;HH:mm&#x27;).seconds(0);
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div
+    class&#x3D;&quot;range&quot;
+    (click)&#x3D;&quot;openPickerPanel()&quot;
+    #pickerPanelOrigin&gt;
+
+    &lt;div class&#x3D;&quot;start&quot;&gt;
+        &lt;div class&#x3D;&quot;date&quot;&gt;{{range.startDate}}&lt;/div&gt;
+        &lt;div
+            class&#x3D;&quot;time&quot;
+            *ngIf&#x3D;&quot;range.startTime&quot;&gt;{{range.startTime}}&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;separator&quot;&gt;-&lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;end&quot;&gt;
+        &lt;div class&#x3D;&quot;date&quot;&gt;{{range.endDate}}&lt;/div&gt;
+        &lt;div
+            class&#x3D;&quot;time&quot;
+            *ngIf&#x3D;&quot;range.endTime&quot;&gt;{{range.endTime}}&lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;ng-template #pickerPanel&gt;
+
+    &lt;!-- Start --&gt;
+    &lt;div class&#x3D;&quot;start&quot;&gt;
+
+        &lt;div class&#x3D;&quot;month&quot;&gt;
+            &lt;div class&#x3D;&quot;month-header&quot;&gt;
+                &lt;button
+                    class&#x3D;&quot;previous-button&quot;
+                    mat-icon-button
+                    (click)&#x3D;&quot;prev()&quot;
+                    tabindex&#x3D;&quot;1&quot;&gt;
+                    &lt;mat-icon [svgIcon]&#x3D;&quot;&#x27;heroicons_outline:chevron-left&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                &lt;/button&gt;
+                &lt;div class&#x3D;&quot;month-label&quot;&gt;{{getMonthLabel(1)}}&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;mat-month-view
+                [(activeDate)]&#x3D;&quot;activeDates.month1&quot;
+                [dateFilter]&#x3D;&quot;dateFilter()&quot;
+                [dateClass]&#x3D;&quot;dateClass()&quot;
+                (click)&#x3D;&quot;$event.stopImmediatePropagation()&quot;
+                (selectedChange)&#x3D;&quot;onSelectedDateChange($event)&quot;
+                #matMonthView1&gt;
+            &lt;/mat-month-view&gt;
+        &lt;/div&gt;
+
+        &lt;mat-form-field
+            class&#x3D;&quot;fuse-mat-no-subscript time start-time&quot;
+            *ngIf&#x3D;&quot;timeRange&quot;&gt;
+            &lt;input
+                matInput
+                [autocomplete]&#x3D;&quot;&#x27;off&#x27;&quot;
+                [formControl]&#x3D;&quot;startTimeFormControl&quot;
+                (blur)&#x3D;&quot;updateStartTime($event)&quot;
+                tabindex&#x3D;&quot;3&quot;&gt;
+            &lt;mat-label&gt;Start time&lt;/mat-label&gt;
+        &lt;/mat-form-field&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- End --&gt;
+    &lt;div class&#x3D;&quot;end&quot;&gt;
+
+        &lt;div class&#x3D;&quot;month&quot;&gt;
+            &lt;div class&#x3D;&quot;month-header&quot;&gt;
+                &lt;div class&#x3D;&quot;month-label&quot;&gt;{{getMonthLabel(2)}}&lt;/div&gt;
+                &lt;button
+                    class&#x3D;&quot;next-button&quot;
+                    mat-icon-button
+                    (click)&#x3D;&quot;next()&quot;
+                    tabindex&#x3D;&quot;2&quot;&gt;
+                    &lt;mat-icon [svgIcon]&#x3D;&quot;&#x27;heroicons_outline:chevron-right&#x27;&quot;&gt;&lt;/mat-icon&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;mat-month-view
+                [(activeDate)]&#x3D;&quot;activeDates.month2&quot;
+                [dateFilter]&#x3D;&quot;dateFilter()&quot;
+                [dateClass]&#x3D;&quot;dateClass()&quot;
+                (click)&#x3D;&quot;$event.stopImmediatePropagation()&quot;
+                (selectedChange)&#x3D;&quot;onSelectedDateChange($event)&quot;
+                #matMonthView2&gt;
+            &lt;/mat-month-view&gt;
+        &lt;/div&gt;
+
+        &lt;mat-form-field
+            class&#x3D;&quot;fuse-mat-no-subscript time end-time&quot;
+            *ngIf&#x3D;&quot;timeRange&quot;&gt;
+            &lt;input
+                matInput
+                [formControl]&#x3D;&quot;endTimeFormControl&quot;
+                (blur)&#x3D;&quot;updateEndTime($event)&quot;
+                tabindex&#x3D;&quot;4&quot;&gt;
+            &lt;mat-label&gt;End time&lt;/mat-label&gt;
+        &lt;/mat-form-field&gt;
+
+    &lt;/div&gt;
+
+&lt;/ng-template&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./date-range.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/* Variables */
+$body-cell-padding: 2px;
+
+fuse-date-range {
+    display: flex;
+
+    .range {
+        display: flex;
+        align-items: center;
+        height: 48px;
+        min-height: 48px;
+        max-height: 48px;
+        cursor: pointer;
+
+        .start,
+        .end {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 16px;
+            border-radius: 6px;
+            border-width: 1px;
+            line-height: 1;
+            @apply shadow-sm border-gray-300 dark:bg-black dark:bg-opacity-5 dark:border-gray-500;
+
+            .date {
+                white-space: nowrap;
+
+                + .time {
+                    margin-left: 8px;
+                }
+            }
+
+            .time {
+                white-space: nowrap;
+            }
+        }
+
+        .separator {
+            margin: 0 2px;
+
+            @screen sm {
+                margin: 0 12px;
+            }
+        }
+    }
+}
+
+.fuse-date-range-panel {
+    border-radius: 4px;
+    padding: 24px;
+    @apply shadow-2xl bg-card;
+
+    .start,
+    .end {
+        display: flex;
+        flex-direction: column;
+
+        .month {
+            max-width: 196px;
+            min-width: 196px;
+            width: 196px;
+
+            .month-header {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 32px;
+                margin-bottom: 16px;
+
+                .previous-button,
+                .next-button {
+                    position: absolute;
+                    width: 24px !important;
+                    height: 24px !important;
+                    min-height: 24px !important;
+                    max-height: 24px !important;
+                    line-height: 24px !important;
+
+                    .mat-icon {
+                        @apply icon-size-5;
+                    }
+                }
+
+                .previous-button {
+                    left: 0;
+                }
+
+                .next-button {
+                    right: 0;
+                }
+
+                .month-label {
+                    font-weight: 500;
+                    @apply text-secondary;
+                }
+            }
+
+            mat-month-view {
+                display: flex;
+                min-height: 188px;
+
+                .mat-calendar-table {
+                    width: 100%;
+                    border-collapse: collapse;
+
+                    tbody {
+
+                        tr {
+
+                            &amp;[aria-hidden&#x3D;true] {
+                                display: none !important;
+                            }
+
+                            &amp;:first-child {
+
+                                td:first-child {
+
+                                    &amp;[aria-hidden&#x3D;true] {
+                                        visibility: hidden;
+                                        pointer-events: none;
+                                        opacity: 0;
+                                    }
+                                }
+                            }
+
+                            td,
+                            td:hover {
+
+                                &amp;.fuse-date-range {
+
+                                    &amp;:before {
+                                        @apply bg-primary-200;
+                                    }
+
+                                    .mat-calendar-body-cell-content {
+                                        background-color: transparent;
+                                    }
+                                }
+
+                                &amp;.fuse-date-range-start,
+                                &amp;.fuse-date-range-end {
+
+                                    .mat-calendar-body-cell-content {
+                                        @apply bg-primary text-on-primary;
+                                    }
+                                }
+
+                                .mat-calendar-body-today {
+                                    border: none;
+                                }
+                            }
+
+                            td.mat-calendar-body-cell {
+                                width: 28px !important;
+                                height: 28px !important;
+                                padding: $body-cell-padding !important;
+
+                                &amp;.fuse-date-range {
+                                    position: relative;
+
+                                    &amp;:before {
+                                        content: &#x27;&#x27;;
+                                        position: absolute;
+                                        top: $body-cell-padding;
+                                        right: 0;
+                                        bottom: $body-cell-padding;
+                                        left: 0;
+                                    }
+
+                                    &amp;.fuse-date-range-start {
+
+                                        &amp;:before {
+                                            left: $body-cell-padding;
+                                            border-radius: 999px 0 0 999px;
+                                        }
+
+                                        &amp;.fuse-date-range-end,
+                                        &amp;:last-child {
+
+                                            &amp;:before {
+                                                right: $body-cell-padding;
+                                                border-radius: 999px;
+                                            }
+                                        }
+                                    }
+
+                                    &amp;.fuse-date-range-end {
+
+                                        &amp;:before {
+                                            right: $body-cell-padding;
+                                            border-radius: 0 999px 999px 0;
+                                        }
+
+                                        &amp;:first-child {
+
+                                            &amp;:before {
+                                                left: $body-cell-padding;
+                                                border-radius: 999px;
+                                            }
+                                        }
+                                    }
+
+                                    &amp;:first-child {
+
+                                        &amp;:before {
+                                            border-radius: 999px 0 0 999px;
+                                        }
+                                    }
+
+                                    &amp;:last-child {
+
+                                        &amp;:before {
+                                            border-radius: 0 999px 999px 0;
+                                        }
+                                    }
+                                }
+
+                                .mat-calendar-body-cell-content {
+                                    position: relative;
+                                    top: 0;
+                                    left: 0;
+                                    width: 24px;
+                                    height: 24px;
+                                    font-size: 12px;
+                                }
+                            }
+
+                            td.mat-calendar-body-label {
+
+                                + td.mat-calendar-body-cell {
+
+                                    &amp;.fuse-date-range {
+
+                                        &amp;:before {
+                                            border-radius: 999px 0 0 999px;
+                                        }
+
+                                        &amp;.fuse-date-range-start {
+
+                                            &amp;.fuse-date-range-end {
+                                                border-radius: 999px;
+                                            }
+                                        }
+
+                                        &amp;.fuse-date-range-end {
+
+                                            &amp;:before {
+                                                left: $body-cell-padding;
+                                                border-radius: 999px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .time {
+            width: 100%;
+            max-width: 196px;
+        }
+    }
+
+    .start {
+        align-items: flex-start;
+        margin-right: 20px;
+
+        .month {
+
+            .month-label {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .end {
+        align-items: flex-end;
+        margin-left: 20px;
+
+        .month {
+
+            .month-label {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div    class="range"    (click)="openPickerPanel()"    #pickerPanelOrigin>    <div class="start">        <div class="date">{{range.startDate}}</div>        <div            class="time"            *ngIf="range.startTime">{{range.startTime}}</div>    </div>    <div class="separator">-</div>    <div class="end">        <div class="date">{{range.endDate}}</div>        <div            class="time"            *ngIf="range.endTime">{{range.endTime}}</div>    </div></div><ng-template #pickerPanel>    <!-- Start -->    <div class="start">        <div class="month">            <div class="month-header">                <button                    class="previous-button"                    mat-icon-button                    (click)="prev()"                    tabindex="1">                    <mat-icon [svgIcon]="\'heroicons_outline:chevron-left\'"></mat-icon>                </button>                <div class="month-label">{{getMonthLabel(1)}}</div>            </div>            <mat-month-view                [(activeDate)]="activeDates.month1"                [dateFilter]="dateFilter()"                [dateClass]="dateClass()"                (click)="$event.stopImmediatePropagation()"                (selectedChange)="onSelectedDateChange($event)"                #matMonthView1>            </mat-month-view>        </div>        <mat-form-field            class="fuse-mat-no-subscript time start-time"            *ngIf="timeRange">            <input                matInput                [autocomplete]="\'off\'"                [formControl]="startTimeFormControl"                (blur)="updateStartTime($event)"                tabindex="3">            <mat-label>Start time</mat-label>        </mat-form-field>    </div>    <!-- End -->    <div class="end">        <div class="month">            <div class="month-header">                <div class="month-label">{{getMonthLabel(2)}}</div>                <button                    class="next-button"                    mat-icon-button                    (click)="next()"                    tabindex="2">                    <mat-icon [svgIcon]="\'heroicons_outline:chevron-right\'"></mat-icon>                </button>            </div>            <mat-month-view                [(activeDate)]="activeDates.month2"                [dateFilter]="dateFilter()"                [dateClass]="dateClass()"                (click)="$event.stopImmediatePropagation()"                (selectedChange)="onSelectedDateChange($event)"                #matMonthView2>            </mat-month-view>        </div>        <mat-form-field            class="fuse-mat-no-subscript time end-time"            *ngIf="timeRange">            <input                matInput                [formControl]="endTimeFormControl"                (blur)="updateEndTime($event)"                tabindex="4">            <mat-label>End time</mat-label>        </mat-form-field>    </div></ng-template></div>'
+    var COMPONENTS = [{'name': 'AcademyComponent', 'selector': 'academy'},{'name': 'AcademyDetailsComponent', 'selector': 'academy-details'},{'name': 'AcademyListComponent', 'selector': 'academy-list'},{'name': 'ActivitiesComponent', 'selector': 'activity'},{'name': 'AdvancedSearchComponent', 'selector': 'advanced-search'},{'name': 'AlertComponent', 'selector': 'alert'},{'name': 'AnalyticsComponent', 'selector': 'analytics'},{'name': 'AnimationsComponent', 'selector': 'animations'},{'name': 'ApexChartsComponent', 'selector': 'apex-charts'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthConfirmationRequiredComponent', 'selector': 'auth-confirmation-required'},{'name': 'AuthForgotPasswordComponent', 'selector': 'auth-forgot-password'},{'name': 'AuthResetPasswordComponent', 'selector': 'auth-reset-password'},{'name': 'AuthSignInComponent', 'selector': 'auth-sign-in'},{'name': 'AuthSignOutComponent', 'selector': 'auth-sign-out'},{'name': 'AuthSignUpComponent', 'selector': 'auth-sign-up'},{'name': 'AuthUnlockSessionComponent', 'selector': 'auth-unlock-session'},{'name': 'CalendarComponent', 'selector': 'calendar'},{'name': 'CalendarRecurrenceComponent', 'selector': 'calendar-recurrence'},{'name': 'CalendarSettingsComponent', 'selector': 'calendar-settings'},{'name': 'CalendarSidebarComponent', 'selector': 'calendar-sidebar'},{'name': 'CardComponent', 'selector': 'card'},{'name': 'CardedFullwidthContentScrollComponent', 'selector': 'carded-fullwidth-content-scroll'},{'name': 'CardedFullwidthNormalScrollComponent', 'selector': 'carded-fullwidth-normal-scroll'},{'name': 'CardedFullwidthPageScrollComponent', 'selector': 'carded-fullwidth-page-scroll'},{'name': 'CardedLeftSidebar1ContentScrollComponent', 'selector': 'carded-left-sidebar-1-content-scroll'},{'name': 'CardedLeftSidebar1NormalScrollComponent', 'selector': 'carded-left-sidebar-1-normal-scroll'},{'name': 'CardedLeftSidebar1PageScrollComponent', 'selector': 'carded-left-sidebar-1-page-scroll'},{'name': 'CardedLeftSidebar2ContentScrollComponent', 'selector': 'carded-left-sidebar-2-content-scroll'},{'name': 'CardedLeftSidebar2NormalScrollComponent', 'selector': 'carded-left-sidebar-2-normal-scroll'},{'name': 'CardedLeftSidebar2PageScrollComponent', 'selector': 'carded-left-sidebar-2-page-scroll'},{'name': 'CardedRightSidebar1ContentScrollComponent', 'selector': 'carded-right-sidebar-1-content-scroll'},{'name': 'CardedRightSidebar1NormalScrollComponent', 'selector': 'carded-right-sidebar-1-normal-scroll'},{'name': 'CardedRightSidebar1PageScrollComponent', 'selector': 'carded-right-sidebar-1-page-scroll'},{'name': 'CardedRightSidebar2ContentScrollComponent', 'selector': 'carded-right-sidebar-2-content-scroll'},{'name': 'CardedRightSidebar2NormalScrollComponent', 'selector': 'carded-right-sidebar-2-normal-scroll'},{'name': 'CardedRightSidebar2PageScrollComponent', 'selector': 'carded-right-sidebar-2-page-scroll'},{'name': 'CardsComponent', 'selector': 'cards'},{'name': 'CenteredLayoutComponent', 'selector': 'centered-layout'},{'name': 'ChangelogComponent', 'selector': 'changelog'},{'name': 'ChatComponent', 'selector': 'chat'},{'name': 'ChatsComponent', 'selector': 'chat-chats'},{'name': 'ClassicLayoutComponent', 'selector': 'classic-layout'},{'name': 'ClassyLayoutComponent', 'selector': 'classy-layout'},{'name': 'ColorsComponent', 'selector': 'colors'},{'name': 'ComingSoonClassicComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonFullscreenComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonFullscreenReversedComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonModernComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonModernReversedComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonSplitScreenComponent', 'selector': 'coming-soon-classic'},{'name': 'ComingSoonSplitScreenReversedComponent', 'selector': 'coming-soon-classic'},{'name': 'CompactComponent', 'selector': 'compact'},{'name': 'CompactLayoutComponent', 'selector': 'compact-layout'},{'name': 'ComponentStructureComponent', 'selector': 'component-structure'},{'name': 'ComponentThemingComponent', 'selector': 'component-theming'},{'name': 'ConfigComponent', 'selector': 'config'},{'name': 'ConfirmationComponent', 'selector': 'confirmation'},{'name': 'ConfirmationDialogComponent', 'selector': 'confirmation'},{'name': 'ConfirmationRequiredClassicComponent', 'selector': 'confirmation-required-classic'},{'name': 'ConfirmationRequiredFullscreenComponent', 'selector': 'confirmation-required-fullscreen'},{'name': 'ConfirmationRequiredFullscreenReversedComponent', 'selector': 'confirmation-required-fullscreen-reversed'},{'name': 'ConfirmationRequiredModernComponent', 'selector': 'confirmation-required-modern'},{'name': 'ConfirmationRequiredModernReversedComponent', 'selector': 'confirmation-required-modern-reversed'},{'name': 'ConfirmationRequiredSplitScreenComponent', 'selector': 'confirmation-required-split-screen'},{'name': 'ConfirmationRequiredSplitScreenReversedComponent', 'selector': 'confirmation-required-split-screen-reversed'},{'name': 'ContactInfoComponent', 'selector': 'chat-contact-info'},{'name': 'ContactsComponent', 'selector': 'contacts'},{'name': 'ContactsDetailsComponent', 'selector': 'contacts-details'},{'name': 'ContactsListComponent', 'selector': 'contacts-list'},{'name': 'ConversationComponent', 'selector': 'chat-conversation'},{'name': 'CryptoComponent', 'selector': 'crypto'},{'name': 'DatatableComponent', 'selector': 'datatable'},{'name': 'DateRangeComponent', 'selector': 'date-range'},{'name': 'DemoPlaceholderComponent', 'selector': 'demo-placeholder'},{'name': 'DemoSidebarComponent', 'selector': 'demo-sidebar'},{'name': 'DenseLayoutComponent', 'selector': 'dense-layout'},{'name': 'DeploymentComponent', 'selector': 'deployment'},{'name': 'DirectoryStructureComponent', 'selector': 'directory-structure'},{'name': 'DrawerComponent', 'selector': 'drawer'},{'name': 'EmptyLayoutComponent', 'selector': 'empty-layout'},{'name': 'EmptyNormalScrollComponent', 'selector': 'empty-normal-scroll'},{'name': 'EmptyPageScrollComponent', 'selector': 'empty-page-scroll'},{'name': 'EnterpriseLayoutComponent', 'selector': 'enterprise-layout'},{'name': 'Error404Component', 'selector': 'error-404'},{'name': 'Error500Component', 'selector': 'error-500'},{'name': 'FileManagerComponent', 'selector': 'file-manager'},{'name': 'FileManagerDetailsComponent', 'selector': 'file-manager-details'},{'name': 'FileManagerListComponent', 'selector': 'file-manager-list'},{'name': 'FinanceComponent', 'selector': 'finance'},{'name': 'FindByKeyComponent', 'selector': 'find-by-key'},{'name': 'ForgotPasswordClassicComponent', 'selector': 'forgot-password-classic'},{'name': 'ForgotPasswordFullscreenComponent', 'selector': 'forgot-password-fullscreen'},{'name': 'ForgotPasswordFullscreenReversedComponent', 'selector': 'forgot-password-fullscreen-reversed'},{'name': 'ForgotPasswordModernComponent', 'selector': 'forgot-password-modern'},{'name': 'ForgotPasswordModernReversedComponent', 'selector': 'forgot-password-modern-reversed'},{'name': 'ForgotPasswordSplitScreenComponent', 'selector': 'forgot-password-split-screen'},{'name': 'ForgotPasswordSplitScreenReversedComponent', 'selector': 'forgot-password-split-screen-reversed'},{'name': 'FormsFieldsComponent', 'selector': 'forms-fields'},{'name': 'FormsLayoutsComponent', 'selector': 'forms-layouts'},{'name': 'FormsWizardsComponent', 'selector': 'forms-wizards'},{'name': 'FullCalendarComponent', 'selector': 'full-calendar'},{'name': 'FullscreenComponent', 'selector': 'fullscreen'},{'name': 'FuseAlertComponent', 'selector': 'fuse-alert'},{'name': 'FuseCardComponent', 'selector': 'fuse-card'},{'name': 'FuseComponentsComponent', 'selector': 'fuse-components'},{'name': 'FuseConfirmationDialogComponent', 'selector': 'fuse-confirmation-dialog'},{'name': 'FuseDateRangeComponent', 'selector': 'fuse-date-range'},{'name': 'FuseDrawerComponent', 'selector': 'fuse-drawer'},{'name': 'FuseFullscreenComponent', 'selector': 'fuse-fullscreen'},{'name': 'FuseHighlightComponent', 'selector': 'textarea[fuse-highlight]'},{'name': 'FuseHorizontalNavigationBasicItemComponent', 'selector': 'fuse-horizontal-navigation-basic-item'},{'name': 'FuseHorizontalNavigationBranchItemComponent', 'selector': 'fuse-horizontal-navigation-branch-item'},{'name': 'FuseHorizontalNavigationComponent', 'selector': 'fuse-horizontal-navigation'},{'name': 'FuseHorizontalNavigationDividerItemComponent', 'selector': 'fuse-horizontal-navigation-divider-item'},{'name': 'FuseHorizontalNavigationSpacerItemComponent', 'selector': 'fuse-horizontal-navigation-spacer-item'},{'name': 'FuseMasonryComponent', 'selector': 'fuse-masonry'},{'name': 'FuseVerticalNavigationAsideItemComponent', 'selector': 'fuse-vertical-navigation-aside-item'},{'name': 'FuseVerticalNavigationBasicItemComponent', 'selector': 'fuse-vertical-navigation-basic-item'},{'name': 'FuseVerticalNavigationCollapsableItemComponent', 'selector': 'fuse-vertical-navigation-collapsable-item'},{'name': 'FuseVerticalNavigationComponent', 'selector': 'fuse-vertical-navigation'},{'name': 'FuseVerticalNavigationDividerItemComponent', 'selector': 'fuse-vertical-navigation-divider-item'},{'name': 'FuseVerticalNavigationGroupItemComponent', 'selector': 'fuse-vertical-navigation-group-item'},{'name': 'FuseVerticalNavigationSpacerItemComponent', 'selector': 'fuse-vertical-navigation-spacer-item'},{'name': 'FuturisticLayoutComponent', 'selector': 'futuristic-layout'},{'name': 'GuidesComponent', 'selector': 'guides'},{'name': 'HelpCenterComponent', 'selector': 'help-center'},{'name': 'HelpCenterFaqsComponent', 'selector': 'help-center-faqs'},{'name': 'HelpCenterGuidesCategoryComponent', 'selector': 'help-center-guides-category'},{'name': 'HelpCenterGuidesComponent', 'selector': 'help-center-guides'},{'name': 'HelpCenterGuidesGuideComponent', 'selector': 'help-center-guides-guide'},{'name': 'HelpCenterSupportComponent', 'selector': 'help-center-support'},{'name': 'HighlightComponent', 'selector': 'highlight'},{'name': 'IconsComponent', 'selector': 'icons'},{'name': 'InstallationComponent', 'selector': 'installation'},{'name': 'IntroductionComponent', 'selector': 'introduction'},{'name': 'InventoryComponent', 'selector': 'inventory'},{'name': 'InventoryListComponent', 'selector': 'inventory-list'},{'name': 'JwtComponent', 'selector': 'jwt'},{'name': 'LandingHomeComponent', 'selector': 'landing-home'},{'name': 'LanguagesComponent', 'selector': 'languages'},{'name': 'LanguagesComponent', 'selector': 'languages'},{'name': 'LayoutComponent', 'selector': 'layout'},{'name': 'LayoutOverviewComponent', 'selector': 'layout-overview'},{'name': 'MailboxComponent', 'selector': 'mailbox'},{'name': 'MailboxComposeComponent', 'selector': 'mailbox-compose'},{'name': 'MailboxDetailsComponent', 'selector': 'mailbox-details'},{'name': 'MailboxListComponent', 'selector': 'mailbox-list'},{'name': 'MailboxSettingsComponent', 'selector': 'mailbox-settings'},{'name': 'MailboxSidebarComponent', 'selector': 'mailbox-sidebar'},{'name': 'MaintenanceComponent', 'selector': 'maintenance'},{'name': 'MasonryComponent', 'selector': 'masonry'},{'name': 'MaterialComponentsComponent', 'selector': 'material-components'},{'name': 'MaterialLayoutComponent', 'selector': 'material-layout'},{'name': 'MediaWatcherComponent', 'selector': 'media-watcher'},{'name': 'MessagesComponent', 'selector': 'messages'},{'name': 'MessagesComponent', 'selector': 'messages'},{'name': 'MockApiComponent', 'selector': 'mock-api'},{'name': 'ModernComponent', 'selector': 'modern'},{'name': 'ModernLayoutComponent', 'selector': 'modern-layout'},{'name': 'MultiLanguageCustomizationComponent', 'selector': 'multi-language'},{'name': 'MustMatchComponent', 'selector': 'must-match'},{'name': 'NavigationComponent', 'selector': 'navigation'},{'name': 'NewChatComponent', 'selector': 'chat-new-chat'},{'name': 'NgxMarkdownComponent', 'selector': 'ngx-markdown'},{'name': 'NotesComponent', 'selector': 'notes'},{'name': 'NotesDetailsComponent', 'selector': 'notes-details'},{'name': 'NotesLabelsComponent', 'selector': 'notes-labels'},{'name': 'NotesListComponent', 'selector': 'notes-list'},{'name': 'NotificationsComponent', 'selector': 'notifications'},{'name': 'NotificationsComponent', 'selector': 'notifications'},{'name': 'OtherComponentsComponent', 'selector': 'other-components'},{'name': 'OverviewComponent', 'selector': 'overview'},{'name': 'OverviewComponent', 'selector': 'overview'},{'name': 'PageLayoutsComponent', 'selector': 'page-layouts'},{'name': 'PrerequisitesComponent', 'selector': 'prerequisites'},{'name': 'PricingModernComponent', 'selector': 'pricing-modern'},{'name': 'PricingSimpleComponent', 'selector': 'pricing-simple'},{'name': 'PricingSingleComponent', 'selector': 'pricing-single'},{'name': 'PricingTableComponent', 'selector': 'pricing-table'},{'name': 'ProfileComponent', 'selector': 'profile'},{'name': 'ProfileComponent', 'selector': 'chat-profile'},{'name': 'ProjectComponent', 'selector': 'project'},{'name': 'QuickChatComponent', 'selector': 'quick-chat'},{'name': 'QuillEditorComponent', 'selector': 'quill-editor'},{'name': 'ResetPasswordClassicComponent', 'selector': 'reset-password-classic'},{'name': 'ResetPasswordFullscreenComponent', 'selector': 'reset-password-fullscreen'},{'name': 'ResetPasswordFullscreenReversedComponent', 'selector': 'reset-password-fullscreen-reversed'},{'name': 'ResetPasswordModernComponent', 'selector': 'reset-password-modern'},{'name': 'ResetPasswordModernReversedComponent', 'selector': 'reset-password-modern-reversed'},{'name': 'ResetPasswordSplitScreenComponent', 'selector': 'reset-password-split-screen'},{'name': 'ResetPasswordSplitScreenReversedComponent', 'selector': 'reset-password-split-screen-reversed'},{'name': 'ScrollbarComponent', 'selector': 'scrollbar'},{'name': 'ScrollResetComponent', 'selector': 'scroll-reset'},{'name': 'ScrumboardBoardAddCardComponent', 'selector': 'scrumboard-board-add-card'},{'name': 'ScrumboardBoardAddListComponent', 'selector': 'scrumboard-board-add-list'},{'name': 'ScrumboardBoardComponent', 'selector': 'scrumboard-board'},{'name': 'ScrumboardBoardsComponent', 'selector': 'scrumboard-boards'},{'name': 'ScrumboardCardComponent', 'selector': 'scrumboard-card'},{'name': 'ScrumboardCardDetailsComponent', 'selector': 'scrumboard-card-details'},{'name': 'ScrumboardComponent', 'selector': 'scrumboard'},{'name': 'SearchComponent', 'selector': 'search'},{'name': 'SearchComponent', 'selector': 'search'},{'name': 'ServingComponent', 'selector': 'serving'},{'name': 'SettingsAccountComponent', 'selector': 'settings-account'},{'name': 'SettingsComponent', 'selector': 'settings'},{'name': 'SettingsComponent', 'selector': 'settings'},{'name': 'SettingsNotificationsComponent', 'selector': 'settings-notifications'},{'name': 'SettingsPlanBillingComponent', 'selector': 'settings-plan-billing'},{'name': 'SettingsSecurityComponent', 'selector': 'settings-security'},{'name': 'SettingsTeamComponent', 'selector': 'settings-team'},{'name': 'ShortcutsComponent', 'selector': 'shortcuts'},{'name': 'ShortcutsComponent', 'selector': 'shortcuts'},{'name': 'SignInClassicComponent', 'selector': 'sign-in-classic'},{'name': 'SignInFullscreenComponent', 'selector': 'sign-in-fullscreen'},{'name': 'SignInFullscreenReversedComponent', 'selector': 'sign-in-fullscreen-reversed'},{'name': 'SignInModernComponent', 'selector': 'sign-in-modern'},{'name': 'SignInModernReversedComponent', 'selector': 'sign-in-modern-reversed'},{'name': 'SignInSplitScreenComponent', 'selector': 'sign-in-split-screen'},{'name': 'SignInSplitScreenReversedComponent', 'selector': 'sign-in-split-screen-reversed'},{'name': 'SignOutClassicComponent', 'selector': 'sign-out-classic'},{'name': 'SignOutFullscreenComponent', 'selector': 'sign-out-fullscreen'},{'name': 'SignOutFullscreenReversedComponent', 'selector': 'sign-out-fullscreen-reversed'},{'name': 'SignOutModernComponent', 'selector': 'sign-out-modern'},{'name': 'SignOutModernReversedComponent', 'selector': 'sign-out-modern-reversed'},{'name': 'SignOutSplitScreenComponent', 'selector': 'sign-out-split-screen'},{'name': 'SignOutSplitScreenReversedComponent', 'selector': 'sign-out-split-screen-reversed'},{'name': 'SignUpClassicComponent', 'selector': 'sign-up-classic'},{'name': 'SignUpFullscreenComponent', 'selector': 'sign-up-fullscreen'},{'name': 'SignUpFullscreenReversedComponent', 'selector': 'sign-up-fullscreen-reversed'},{'name': 'SignUpModernComponent', 'selector': 'sign-up-modern'},{'name': 'SignUpModernReversedComponent', 'selector': 'sign-up-modern-reversed'},{'name': 'SignUpSplitScreenComponent', 'selector': 'sign-up-split-screen'},{'name': 'SignUpSplitScreenReversedComponent', 'selector': 'sign-up-split-screen-reversed'},{'name': 'SimpleFullwidth1ContentScrollComponent', 'selector': 'simple-fullwidth-1-content-scroll'},{'name': 'SimpleFullwidth1NormalScrollComponent', 'selector': 'simple-fullwidth-1-normal-scroll'},{'name': 'SimpleFullwidth1PageScrollComponent', 'selector': 'simple-fullwidth-1-page-scroll'},{'name': 'SimpleFullwidth2ContentScrollComponent', 'selector': 'simple-fullwidth-2-content-scroll'},{'name': 'SimpleFullwidth2NormalScrollComponent', 'selector': 'simple-fullwidth-2-normal-scroll'},{'name': 'SimpleFullwidth2PageScrollComponent', 'selector': 'simple-fullwidth-2-page-scroll'},{'name': 'SimpleLeftSidebar1ContentScrollComponent', 'selector': 'simple-left-sidebar-1-content-scroll'},{'name': 'SimpleLeftSidebar1NormalScrollComponent', 'selector': 'simple-left-sidebar-1-normal-scroll'},{'name': 'SimpleLeftSidebar1PageScrollComponent', 'selector': 'simple-left-sidebar-1-page-scroll'},{'name': 'SimpleLeftSidebar2ContentScrollComponent', 'selector': 'simple-left-sidebar-2-content-scroll'},{'name': 'SimpleLeftSidebar2InnerScrollComponent', 'selector': 'simple-left-sidebar-2-inner-scroll'},{'name': 'SimpleLeftSidebar2NormalScrollComponent', 'selector': 'simple-left-sidebar-2-normal-scroll'},{'name': 'SimpleLeftSidebar2PageScrollComponent', 'selector': 'simple-left-sidebar-2-page-scroll'},{'name': 'SimpleLeftSidebar3NormalScrollComponent', 'selector': 'simple-left-sidebar-3-normal-scroll'},{'name': 'SimpleLeftSidebar3PageScrollComponent', 'selector': 'simple-left-sidebar-3-page-scroll'},{'name': 'SimpleLeftSidebar3ScrollComponent', 'selector': 'simple-left-sidebar-3-content-scroll'},{'name': 'SimpleRightSidebar1ContentScrollComponent', 'selector': 'simple-right-sidebar-1-content-scroll'},{'name': 'SimpleRightSidebar1NormalScrollComponent', 'selector': 'simple-right-sidebar-1-normal-scroll'},{'name': 'SimpleRightSidebar1PageScrollComponent', 'selector': 'simple-right-sidebar-1-page-scroll'},{'name': 'SimpleRightSidebar2ContentScrollComponent', 'selector': 'simple-right-sidebar-2-content-scroll'},{'name': 'SimpleRightSidebar2InnerScrollComponent', 'selector': 'simple-right-sidebar-2-inner-scroll'},{'name': 'SimpleRightSidebar2NormalScrollComponent', 'selector': 'simple-right-sidebar-2-normal-scroll'},{'name': 'SimpleRightSidebar2PageScrollComponent', 'selector': 'simple-right-sidebar-2-page-scroll'},{'name': 'SimpleRightSidebar3ContentScrollComponent', 'selector': 'simple-right-sidebar-3-content-scroll'},{'name': 'SimpleRightSidebar3NormalScrollComponent', 'selector': 'simple-right-sidebar-3-normal-scroll'},{'name': 'SimpleRightSidebar3PageScrollComponent', 'selector': 'simple-right-sidebar-3-page-scroll'},{'name': 'SplashScreenComponent', 'selector': 'splash-screen'},{'name': 'SplashScreenCustomizationComponent', 'selector': 'splash-screen'},{'name': 'StarterKitComponent', 'selector': 'starter-kit'},{'name': 'TailwindCSSComponent', 'selector': 'tailwindcss'},{'name': 'TailwindCSSComponent', 'selector': 'tailwindcss'},{'name': 'TasksComponent', 'selector': 'tasks'},{'name': 'TasksDetailsComponent', 'selector': 'tasks-details'},{'name': 'TasksListComponent', 'selector': 'tasks-list'},{'name': 'ThemeLayoutsComponent', 'selector': 'theme-layouts'},{'name': 'ThemingComponent', 'selector': 'theming'},{'name': 'ThinLayoutComponent', 'selector': 'thin-layout'},{'name': 'TypographyComponent', 'selector': 'typography'},{'name': 'UnlockSessionClassicComponent', 'selector': 'unlock-session-classic'},{'name': 'UnlockSessionFullscreenComponent', 'selector': 'unlock-session-fullscreen'},{'name': 'UnlockSessionFullscreenReversedComponent', 'selector': 'unlock-session-fullscreen-reversed'},{'name': 'UnlockSessionModernComponent', 'selector': 'unlock-session-modern'},{'name': 'UnlockSessionModernReversedComponent', 'selector': 'unlock-session-modern-reversed'},{'name': 'UnlockSessionSplitScreenComponent', 'selector': 'unlock-session-split-screen'},{'name': 'UnlockSessionSplitScreenReversedComponent', 'selector': 'unlock-session-split-screen-reversed'},{'name': 'UpdatingComponent', 'selector': 'updating'},{'name': 'UserComponent', 'selector': 'user'},{'name': 'UserComponent', 'selector': 'user'}];
+    var DIRECTIVES = [{'name': 'FuseScrollbarDirective', 'selector': '[fuseScrollbar]'},{'name': 'FuseScrollResetDirective', 'selector': '[fuseScrollReset]'}];
+    var ACTUAL_COMPONENT = {'name': 'FuseDateRangeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'FuseDateRangeComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
