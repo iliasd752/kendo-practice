@@ -1,3 +1,7 @@
 <div>
-    <ngx-datatable [rows]="rows" [columns]="columns"> </ngx-datatable>
+    <ngx-datatable [rows]="rows | async" [columns]="columns" [limit]="10">
+
+    </ngx-datatable>
+
 </div>
+
