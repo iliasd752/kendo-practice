@@ -11,7 +11,7 @@ export class PostContainerComponent implements OnInit {
 
     public rows: Posts[];
     public columns = [
-         {userId: 'userId', id: 'id'}
+         {id: 'id'}
     ];
 
     constructor(private interactionService: InteractionService) {
