@@ -1,6 +1,31 @@
-<div>
-    <ngx-datatable class="material" [rows]="rows | async" [columns]="columns" [headerHeight]="100" [footerHeight]="100" rowHeight="50" [columnMode]="columnMode" [limit]="10">
+<div class="pl-10 pt-10">
+    <ngx-datatable #table class="dark" [rows]="rows | async" [columns]="columns" [headerHeight]="100" [footerHeight]="100" rowHeight="50" [columnMode]="columnMode" [limit]="10">
+    <ngx-datatable-footer>
+        <ng-template
+    let-curPage="curPage"
+    let-offset="offset"
+    let-pageSize="pageSize"
+    let-rowCount="rowCount"
+    let-selectedCount="selectedCount"
+    ngx-datatable-footer-template>
+            <div class="col">
+                <datatable-pager
 
+                    (change)="table.onFooterPage($event);"
+                    [count]="rowCount"
+                    [hidden]="!((rowCount / pageSize) >1)"
+                    [page]="curPage"
+                    [pagerLeftArrowIcon]="'datatable-icon-left'"
+                    [pagerNextIcon]="'datatable-icon-skip'"
+                    [pagerPreviousIcon]="'datatable-icon-prev'"
+                    [pagerRightArrowIcon]="'datatable-icon-right'"
+                    [size]="pageSize"
+                >
+                </datatable-pager>
+
+            </div>
+    </ng-template>
+    </ngx-datatable-footer>
     </ngx-datatable>
 
 </div>

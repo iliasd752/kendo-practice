@@ -14,7 +14,7 @@ export class PostContainerComponent implements OnInit {
 
     public rows: Observable<Posts[]>;
     public columns = [
-         {name: 'userId' }, {name: 'id'}, {name: 'title'}, {name: 'body'}
+         {name: 'userId' }, {name: 'id'}, {name: 'title'}
     ];
     public columnMode = ColumnMode;
     totalLength: any;

@@ -8,3 +8,79 @@
     padding: 8px;
     width: 100%;
 }
+
+.ngx-datatable {
+    display: block;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    transform: translateZ(0);
+    width: 700px;
+    padding: 10px;
+}
+
+.ngx-datatable.material {
+    border-radius: 8px !important;
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+.datatable-footer {
+    border: 0px !important;
+    margin-top: 1% !important;
+
+    .page-count {
+        line-height: 50px !important;
+        height: 42.88px !important;
+        padding: 0 1.2rem !important;
+    }
+}
+
+.datatable-pager {
+
+
+    margin: 0 10px !important;
+
+    li {
+        background: #FFFFFF !important;
+        border: 1px solid #AAA9BE !important;
+        box-sizing: border-box !important;
+        border-radius: 4px !important;
+        margin: 0 4px !important;
+        width: 36px !important;
+        height: 36px !important;
+        text-align: center !important;
+
+
+        &.active a {
+            background-color: #FFFFFF !important;
+        }
+    }
+}
+a {
+    font-family: Sansa Std, serif !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    text-align: center !important;
+    color: #283897 !important;
+    padding: 0px !important;
+
+    &:hover {
+        background-color: #FFFFFF !important;
+    }
+
+
+
+}
+
+
+
+.datatable-icon-left,
+.datatable-icon-skip,
+.datatable-icon-right,
+.datatable-icon-prev {
+    color: #283897 !important;
+}
+
