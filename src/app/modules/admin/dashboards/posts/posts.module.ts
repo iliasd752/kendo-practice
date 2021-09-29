@@ -4,6 +4,7 @@ import {RouterModule} from '@angular/router';
 import {postRoutes} from './posts.routing';
 import {ListViewModule} from '@progress/kendo-angular-listview';
 import {NgxDatatableModule} from '@swimlane/ngx-datatable';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 
@@ -14,7 +15,8 @@ import {NgxDatatableModule} from '@swimlane/ngx-datatable';
     CommonModule,
     RouterModule.forChild(postRoutes),
     ListViewModule,
-    NgxDatatableModule
+    NgxDatatableModule,
+    NgxPaginationModule
   ]
 })
 export class PostsModule {

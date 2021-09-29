@@ -18,6 +18,7 @@ import {MatTableModule} from '@angular/material/table';
 import { CommentPageComponent } from './modules/admin/dashboards/comments/comment-page/comment-page.component';
 import { ListViewModule } from '@progress/kendo-angular-listview';
 import {NgxDatatableModule} from "@swimlane/ngx-datatable";
+import {NgxPaginationModule} from "ngx-pagination";
 
 
 const routerConfig: ExtraOptions = {
@@ -52,7 +53,8 @@ const routerConfig: ExtraOptions = {
         MarkdownModule.forRoot({}),
         MatTableModule,
         ListViewModule,
-        NgxDatatableModule
+        NgxDatatableModule,
+        NgxPaginationModule
     ],
     bootstrap   : [
         AppComponent
